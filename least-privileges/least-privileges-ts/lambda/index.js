@@ -8,6 +8,9 @@ exports.handler = async (event) => {
   const s3 = new AWS.S3();
 
   // Set the parameters for the listObjects method
+  // TODO: Update bucket name
+  // or
+  // Read bucket name as environment parameter
   const params = {
     Bucket: 'BUCKET_NAME'
   };
